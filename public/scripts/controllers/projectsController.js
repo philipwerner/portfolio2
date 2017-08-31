@@ -7,8 +7,10 @@ var app = app || {};
   projectsController.index = () => {
     app.Projects.fetchAll(app.projectView.initIndexPage);
 
-    $('main > section').hide();
-    $('#projects').show();
+    // $('#home').hide();
+    // $('#repos').hide();
+    // $('#about').hide();
+    $('#projects').show().siblings().hide();
   };
 
   module.projectsController = projectsController;

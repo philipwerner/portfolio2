@@ -2,18 +2,21 @@
 var app = app || {};
 
 (function(module) {
-
-  function Projects (rawDataObj) {
-    this.title = rawDataObj.title;
-    this.source = rawDataObj.source;
-    this.body = rawDataObj.body;
+  function Projects(rawDataObj) {
+    Object.keys(rawDataObj).forEach(key => this[key] = rawDataObj[key]);
   }
+  //
+  // function Projects (rawDataObj) {
+  //   this.title = rawDataObj.title;
+  //   this.source = rawDataObj.source;
+  //   this.body = rawDataObj.body;
+  // }
 
   Projects.all = [];
 
   Projects.prototype.toHtml = function() {
 
-    var template = $('#projects').html();
+    var template = $('#projects-template').text();
     var templateRender = Handlebars.compile(template);
 
     return templateRender(this);
@@ -25,7 +28,7 @@ var app = app || {};
     })
   };
 
-  Projects.fetchAll = function() {
+  Projects.fetchAll = function(rawData) {
     if (localStorage.rawData) {
 
       Projects.loadAll(JSON.parse(localStorage.getItem('rawData')));

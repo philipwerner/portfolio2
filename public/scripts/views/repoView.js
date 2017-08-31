@@ -11,7 +11,7 @@ var app = app || {};
     $repos.show().siblings().hide();
   };
 
-  const render = Handlebars.compile($('#repos-template').text());
+  let render = Handlebars.compile($('#repos-template').text());
 
   repoView.index = function() {
     ui();

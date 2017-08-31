@@ -5,8 +5,7 @@ var app = app || {};
   const aboutController = {};
   aboutController.index = () => {
 
-    $('main > section').hide();
-    $('#about').show();
+    $('#about').show().siblings().hide();
   };
   module.aboutController = aboutController;
 })(app);

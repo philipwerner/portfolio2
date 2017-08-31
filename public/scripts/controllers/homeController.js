@@ -6,8 +6,10 @@ var app = app || {};
 
   homeController.index = () => {
 
-    $('main > section').hide();
-    $('#home').show();
+    // $('#projects').hide();
+    // $('#repos').hide();
+    // $('#about').hide();
+    $('#home').show().siblings().hide();
   };
 
   module.homeController = homeController;
