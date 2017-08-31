@@ -5,7 +5,10 @@ var app = app || {};
   const projectsController = {};
 
   projectsController.index = () => {
-    $('#projects').show().siblings().hide();
+    app.Projects.fetchAll(app.projectView.initIndexPage);
+
+    $('main > section').hide();
+    $('#projects').show();
   };
 
   module.projectsController = projectsController;
