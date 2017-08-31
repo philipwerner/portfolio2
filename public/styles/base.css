@@ -1,11 +1,15 @@
-img {
+#home {
+  background-image: url('/Users/philipwerner/codefellows/301/portfolio2/public/images/seatown.jpg');
   max-width: 100%;
+  display: inline;
+  margin: 3em auto;
 }
 
 body {
   line-height: 1.5;
   font-size: 100%;
   color: #313131;
+  background-color: black;
 }
 
 main {
@@ -19,8 +23,17 @@ hr {
 }
 
 /*TEXT*/
+h1, h2, h3 {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
 p {
   font-size: 1em;
+  color: white;
 }
 
 address {
