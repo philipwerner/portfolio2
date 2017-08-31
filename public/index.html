@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
-    <script id="template" type="text/x-handlebars-template">
+    <script id="repos-template" type="text/x-handlebars-template">
       <li>
         <a href="{{html_url}}" target="_blank">
           <h3>{{name}}</h3>
@@ -34,6 +34,7 @@
         <ul>
           <li class="tab" data-content="home"><a href="/">Home</a></li>
           <li class="tab" data-content="projects"><a href="/projects">Projects</a></li>
+          <li class="tab" data-content="github"><a href="/github">Github Repository</a></li>
           <li class="tab" data-content="about"><a href="/about">About</a></li>
         </ul>
 
@@ -47,6 +48,10 @@
       </section>
 
       <section id="projects" class="tab-content">
+
+      </section>
+
+      <section id="repos" class="tab-content">
         <ul>
         </ul>
       </section>

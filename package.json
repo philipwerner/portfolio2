@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "codefellows 301 portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-request-proxy": "^2.0.0",
+    "pg": "^7.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipwerner/portfolio2.git"
+  },
+  "author": "Phil Werner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philipwerner/portfolio2/issues"
+  },
+  "homepage": "https://github.com/philipwerner/portfolio2#readme"
+}
