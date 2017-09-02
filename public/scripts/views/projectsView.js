@@ -4,12 +4,12 @@ var app = app || {};
 (function(module) {
   const projectView = {};
 
-  projectView.initIndexPage = () => {
+  projectView.initProjectPage = () => {
     app.Projects.all.forEach(project => {
       $('#projects').append(project.toHtml('#project-template'));
     });
 
   }
-  app.Projects.fetchAll(projectView.initIndexPage);
+  app.Projects.fetchAll(projectView.initProjectPage);
   module.projectView = projectView
 })(app);
