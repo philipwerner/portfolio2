@@ -2,15 +2,15 @@
 var app = app || {};
 
 (function(module) {
-  function Projects(rawDataObj) {
-    Object.keys(rawDataObj).forEach(key => this[key] = rawDataObj[key]);
-  }
-  //
-  // function Projects (rawDataObj) {
-  //   this.title = rawDataObj.title;
-  //   this.source = rawDataObj.source;
-  //   this.body = rawDataObj.body;
+  // function Projects(rawDataObj) {
+  //   Object.keys(rawDataObj).forEach(key => this[key] = rawDataObj[key]);
   // }
+
+  function Projects (rawDataObj) {
+    this.title = rawDataObj.title;
+    this.source = rawDataObj.source;
+    this.body = rawDataObj.body;
+  }
 
   Projects.all = [];
 
