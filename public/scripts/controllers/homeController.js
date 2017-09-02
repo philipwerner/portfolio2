@@ -6,9 +6,6 @@ var app = app || {};
 
   homeController.index = () => {
 
-    // $('#projects').hide();
-    // $('#repos').hide();
-    // $('#about').hide();
     $('#home').show().siblings().hide();
   };
 
