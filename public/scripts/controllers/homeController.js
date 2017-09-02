@@ -6,8 +6,7 @@ var app = app || {};
 
   homeController.index = () => {
 
-    $('main > section').hide();
-    $('#home').show();
+    $('#home').show().siblings().hide();
   };
 
   module.homeController = homeController;

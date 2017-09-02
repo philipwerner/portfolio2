@@ -7,9 +7,9 @@
   padding: 0 0 .2em 1em;
 }
 
-.icon-menu {
+#mini-menu {
+  color: white;
   font-size: 3em;
-  float: right;
 }
 
 .main-nav {
@@ -37,11 +37,18 @@
 .template {
   display: none;
 }
-
+footer {
+  display: inline;
+  margin-top: 6em;
+}
+.footer-links {
+  float: right;
+  display: inline-block;
+}
 
 
 @media only screen and (min-width: 640px) {
-  .icon-menu {
+  #mini-menu {
     display: none;
   }
 

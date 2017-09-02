@@ -5,8 +5,8 @@ var app = app || {};
   const reposController = {};
 
   reposController.index = () => {
-    $('main > section').hide();
-    $('#repos').show();
+
+    $('#repos').show().siblings().hide();
     app.repos.requestRepos(app.repoView.index);
   };
 
