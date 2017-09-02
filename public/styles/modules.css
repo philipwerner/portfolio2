@@ -34,9 +34,10 @@
   border-bottom: 1px solid #ccc;
 }
 
-.template {
+/*.template {
   display: none;
-}
+}*/
+
 footer {
   display: inline;
   margin-top: 6em;

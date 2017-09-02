@@ -10,6 +10,6 @@ var app = app || {};
     });
 
   }
-  app.Projects.fetchAll(projectView.initProjectPage);
+  // app.Projects.fetchAll(projectView.initProjectPage);
   module.projectView = projectView
 })(app);

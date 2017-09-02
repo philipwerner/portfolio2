@@ -5,7 +5,7 @@ var app = app || {};
   const projectsController = {};
 
   projectsController.index = () => {
-    app.Projects.fetchAll(app.projectView.initIndexPage);
+    app.Projects.fetchAll(app.projectView.initProjectPage);
 
     $('#projects').show().siblings().hide();
   };
